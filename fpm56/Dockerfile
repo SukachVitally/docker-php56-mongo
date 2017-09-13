@@ -11,6 +11,7 @@ RUN apt-get install -y python-software-properties
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y --no-install-recommends curl ca-certificates build-essential make gcc git-core
 RUN apt-get install -y locales
+RUN apt-get install -y ssh
 
 RUN echo "deb http://ppa.launchpad.net/ondrej/php/ubuntu xenial main" > /etc/apt/sources.list.d/ondrej-ubuntu-php-xenial.list
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
